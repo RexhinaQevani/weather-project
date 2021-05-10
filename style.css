@@ -39,7 +39,7 @@ h2 {
   font-size: 30px;
   position: relative;
   top: -120px;
-  left: 990px;
+  left: 980px;
 }
 h4 {
   position: relative;
@@ -127,10 +127,18 @@ i {
   box-sizing: border-box;
   font-family: "Libre Baskerville", serif;
 }
+.github {
+  color: rgb(18, 30, 202);
+}
+.github:hover {
+  color: #496023;
+  text-decoration: underline;
+}
 small {
   display: block;
   position: fixed;
   bottom: 0px;
-  color: #040530;
-  opacity: 0.7;
+  left: 20px;
+  color: #04053091;
+  font-size: 18px;
 }
