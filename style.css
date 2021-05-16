@@ -1,15 +1,15 @@
 .container {
+  position: fixed;
+  margin: 20px 20px auto;
   max-width: 1300px;
-  margin: 30px auto;
+  height: 800px;
   padding: 20px;
-  border: 1px solid rgb(233, 166, 22);
-  box-shadow: rgb(37 39 89 / 10%) 0px 8px 8px 0;
-  background: url("tree-sky.jpg");
+  background: no-repeat url("tree-sky.jpg");
   background-size: cover;
+  border: 1px solid rgb(233, 166, 22);
   border-radius: 10px;
   color: #fff;
-  height: 800px;
-  box-sizing: border-box;
+  opacity: 1;
   font-family: "Libre Baskerville", serif;
 }
 input[type="text"] {
@@ -49,7 +49,7 @@ h1 {
   display: block;
   position: fixed;
   top: 45px;
-  left: 440px;
+  left: 50px;
   font-size: 50px;
 }
 h2 {
@@ -57,31 +57,31 @@ h2 {
   position: fixed;
   font-size: 30px;
   top: 110px;
-  left: 440px;
+  left: 50px;
 }
 h4 {
   display: block;
   position: fixed;
   top: 150px;
-  left: 440px;
+  left: 50px;
 }
 .weather-temp-today {
   position: fixed;
   top: 180px;
-  left: 650px;
+  left: 300px;
   font-size: 40px;
 }
 h3 {
   position: fixed;
   top: 240px;
-  left: 650px;
+  left: 300px;
   font-size: 25px;
 }
 #icon {
   position: fixed;
   width: 200px;
   top: 160px;
-  left: 440px;
+  left: 50px;
 }
 a {
   color: #fff;
@@ -100,25 +100,26 @@ a:hover {
 .conditions {
   position: fixed;
   top: 275px;
-  left: 650px;
+  left: 300px;
   width: fit-content;
   font-size: 15px;
   border-radius: 20px;
   padding: 10px;
-  opacity: 0.8;
   border: solid rgb(233, 166, 22);
   list-style: none;
 }
 small {
   position: fixed;
   bottom: 0;
-  color: #04053091;
+  left: 20px;
+  color: #000;
   font-size: 18px;
+  opacity: 0.8;
 }
 .github {
-  color: rgb(18, 30, 202);
+  color: rgb(52, 39, 224);
 }
 .github:hover {
-  color: #496023;
+  color: #3b5510;
   text-decoration: underline;
 }
