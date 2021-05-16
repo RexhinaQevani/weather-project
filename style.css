@@ -1,7 +1,9 @@
-.container {
-  margin: 30px 20px;
-  padding: 20px;
+.wrapper {
   max-width: 1250px;
+  margin: 30px auto;
+}
+.container {
+  padding: 20px;
   border: 1px solid rgb(233, 166, 22);
   box-shadow: rgb(37 39 89 / 10%) 0px 8px 8px 0;
   background: url("tree-sky.jpg");
@@ -14,8 +16,8 @@
 }
 input[type="text"] {
   position: relative;
-  top: 20px;
-  left: 655px;
+  top: -40px;
+  left: 700px;
   border-radius: 2px;
   border: none;
   box-shadow: 0 2px 2px 0 rgb(0 0 0 / 16%), 0 0 0 1px rgb(0 0 0 / 8%);
@@ -26,14 +28,14 @@ input[type="text"] {
 }
 input[type="submit"] {
   position: relative;
-  top: 20px;
-  left: 655px;
+  top: -42.5px;
+  left: 705px;
   cursor: pointer;
 }
 .current-position {
   position: relative;
-  top: -18px;
-  left: 1050px;
+  top: -80px;
+  left: 1100px;
   background: #7d942e;
   color: #fff;
   padding: 6px;
@@ -45,32 +47,43 @@ input[type="submit"] {
   cursor: pointer;
   background: #496023;
 }
-h2 {
-  position: fixed;
-  font-size: 30px;
-  top: 120px;
-  left: 40px;
-}
-h4 {
-  position: fixed;
-  top: 160px;
-  left: 40px;
-}
 h1 {
+  display: block;
   position: fixed;
-  top: 60px;
-  left: 40px;
+  top: 15px;
+  left: 440px;
   font-size: 50px;
 }
-h3 {
-  color: #fff;
-  top: -60px;
-  left: 20px;
+h2 {
+  display: block;
+  position: fixed;
+  font-size: 30px;
+  top: 80px;
+  left: 440px;
+}
+h4 {
+  display: block;
+  position: fixed;
+  top: 120px;
+  left: 440px;
 }
 .weather-temp-today {
-  top: -100px;
-  left: 20px;
+  position: fixed;
+  top: 150px;
+  left: 650px;
   font-size: 40px;
+}
+h3 {
+  position: fixed;
+  top: 210px;
+  left: 650px;
+  font-size: 25px;
+}
+#icon {
+  position: fixed;
+  width: 150px;
+  top: 150px;
+  left: 440px;
 }
 a {
   color: #fff;
@@ -82,8 +95,9 @@ a:hover {
   color: #fff;
 }
 .conditions {
-  top: -185px;
-  left: 230px;
+  position: fixed;
+  top: 245px;
+  left: 650px;
   width: fit-content;
   font-size: 15px;
   border-radius: 20px;
@@ -92,16 +106,16 @@ a:hover {
   border: solid rgb(233, 166, 22);
   list-style: none;
 }
-
+small {
+  position: fixed;
+  bottom: 0;
+  color: #04053091;
+  font-size: 18px;
+}
 .github {
   color: rgb(18, 30, 202);
 }
 .github:hover {
   color: #496023;
   text-decoration: underline;
-}
-small {
-  text-align: center;
-  color: #04053091;
-  font-size: 18px;
 }

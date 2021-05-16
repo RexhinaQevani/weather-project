@@ -14,59 +14,62 @@
       href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap"
       rel="stylesheet"
     />
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script
       src="https://kit.fontawesome.com/497184862c.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
     <title>WeatherApp</title>
   </head>
-  <link rel="stylesheet" href="style.css"/>
   <body>
     <div class="container">
-      <div>
-        <div class="app">
-          <form id="search-form">
-            <input id="search-text-input"
-              type="text"
-              placeholder="Enter city"
-              autocomplete="off"
-              value
-            />
-            <input type="submit" class="btn btn-primary" value="Search" />
-          </form>
-          <button type="button" class="current-position">Current Position</button>
-        </div>
+      <div class="wrapper">
+        <form id="search-form">
+          <input
+            id="search-text-input"
+            type="text"
+            placeholder="Enter city"
+            autocomplete="off"
+            value
+          />
+          <input type="submit" class="btn btn-primary" value="Search" />
+        </form>
+        <button type="button" class="current-position">Current Position</button>
         <h1 id="city-name"></h1>
+        <br />
         <h2></h2>
         <br />
         <h4></h4>
-      </div>
-      <br />
-       <div class="weather-temp-today" id="temperature">
-        <span class="temp-today" id="current-temp"></span>
-        <span class="units">
-          <a href="#" id="celsius-temp"> ℃</a>
-           |
-           <a href="#" id="fahrenheit-temp"> ℉</a>
-           </span>
-           </div>
-            <br />
-            <ul class="conditions">
-              <li>Humidity:  
-                <span id="humidity"></span> %
-              </li>
-              <li >Wind:
-                <span id="wind"></span> km/h
-              </li>
-            </ul>
-     
-            </div>
-          </div>
+        <br />
+        <div class="weather-temp-today" id="temperature">
+          <span class="temp-today" id="current-temp"></span>
+          <span class="units">
+            <a href="#" id="celsius-temp"> ℃</a>
+            |
+            <a href="#" id="fahrenheit-temp"> ℉</a>
+          </span>
         </div>
-      <small><a class="github" href="https://github.com/RexhinaQevani/weather-project" target="_blank">Open-source code</a> , created by Rexhina Qevani </small>
+        <h3 id="description"></h3>
+        <br />
+        <div class="col-6">
+          <ul class="conditions">
+            <li>Humidity: <span id="humidity"></span> %</li>
+            <li>Wind: <span id="wind"></span> km/h</li>
+          </ul>
+          <img id="icon" src="#" alt="" />
+        </div>
+      </div>
     </div>
-  </div>
+    <small
+      ><a
+        class="github"
+        href="https://github.com/RexhinaQevani/weather-project"
+        target="_blank"
+        >Open-source code</a
+      >
+      , created by Rexhina Qevani
+    </small>
     <script src="script.js"></script>
   </body>
 </html>
