@@ -24,43 +24,40 @@
   </head>
   <body>
     <div class="container">
-      <div class="wrapper">
-        <form id="search-form">
-          <input
-            id="search-text-input"
-            type="text"
-            placeholder="Enter city"
-            autocomplete="off"
-            value
-          />
-          <input type="submit" class="btn btn-primary" value="Search" />
-        </form>
-        <button type="button" class="current-position">Current Position</button>
-        <h1 id="city-name"></h1>
-        <br />
-        <h2></h2>
-        <br />
-        <h4></h4>
-        <br />
-        <div class="weather-temp-today" id="temperature">
-          <span class="temp-today" id="current-temp"></span>
-          <span class="units">
-            <a href="#" id="celsius-temp"> ℃</a>
-            |
-            <a href="#" id="fahrenheit-temp" class="active"> ℉</a>
-          </span>
-        </div>
-        <h3 id="description"></h3>
-        <br />
-        <div class="col-6">
-          <ul class="conditions">
-            <li>Humidity: <span id="humidity"></span> %</li>
-            <li>Wind: <span id="wind"></span> km/h</li>
-          </ul>
-          <img id="icon" src="#" alt="" />
-        </div>
-        <div class="weather-forecast" id="forecast"></div>
+      <form id="search-form">
+        <input
+          id="search-text-input"
+          type="text"
+          placeholder="Enter city"
+          autocomplete="off"
+          value
+        />
+        <input type="submit" class="btn btn-primary" value="Search" />
+      </form>
+      <button type="button" class="current-position">Current Position</button>
+      <h1 id="city-name"></h1>
+      <br />
+      <h2></h2>
+      <br />
+      <h4></h4>
+      <br />
+      <div class="weather-temp-today" id="temperature">
+        <span class="temp-today" id="current-temp"></span> ℃ |
+        <span class="temperature-min" id="min-temp"></span
+        ><span id="celsius-min"> ℃ - </span
+        ><span class="temperature-max" id="max-temp"></span
+        ><span id="celsius-max"> ℃</span>
       </div>
+      <h3 id="description"></h3>
+      <br />
+      <div class="col-6">
+        <ul class="conditions">
+          <li>Humidity: <span id="humidity"></span> %</li>
+          <li>Wind: <span id="wind"></span> m/sec</li>
+        </ul>
+        <img id="icon" src="#" alt="" />
+      </div>
+      <div class="weather-forecast" id="forecast"></div>
     </div>
     <small
       ><a

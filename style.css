@@ -7,6 +7,7 @@
   background: no-repeat url("tree-sky.jpg");
   background-size: cover;
   border: 1px solid rgb(233, 166, 22);
+  box-shadow: 5px 5px rgb(233, 166, 22);
   border-radius: 10px;
   color: #fff;
   opacity: 1;
@@ -16,13 +17,17 @@ input[type="text"] {
   position: relative;
   top: 5px;
   left: 700px;
-  border-radius: 2px;
-  border: none;
-  box-shadow: 0 2px 2px 0 rgb(0 0 0 / 16%), 0 0 0 1px rgb(0 0 0 / 8%);
+  border-radius: 5px;
+  border: 2px solid rgb(233, 166, 22);
+  background-color: transparent;
+  box-shadow: inset 1px 1px 3px #ccc;
+  color: #fff;
   height: 44px;
-  outline: 0;
   padding: 10px;
   width: 300px;
+}
+::placeholder {
+  color: #fff;
 }
 input[type="submit"] {
   position: relative;
@@ -71,6 +76,12 @@ h4 {
   left: 300px;
   font-size: 40px;
 }
+.temperature-min,
+.temperature-max,
+#celsius-min,
+#celsius-max {
+  font-size: 20px;
+}
 h3 {
   position: fixed;
   top: 240px;
@@ -83,20 +94,6 @@ h3 {
   top: 160px;
   left: 50px;
 }
-a {
-  color: #fff;
-  text-decoration: none;
-}
-a:hover {
-  color: #fff;
-}
-
-.active {
-  color: rgb(233, 166, 22);
-}
-.active:hover {
-  text-decoration: none;
-}
 .conditions {
   position: fixed;
   top: 275px;
@@ -105,22 +102,26 @@ a:hover {
   font-size: 15px;
   border-radius: 20px;
   padding: 10px;
-  border: solid rgb(233, 166, 22);
+  border: 3px solid rgb(233, 166, 22);
   list-style: none;
 }
-
 .weather-forecast {
   position: fixed;
-  margin-top: 250px;
-  padding: 20px;
+  width: 930px;
+  height: 220px;
+  margin-top: 280px;
+  padding: 10px;
   background-color: transparent;
-  border: solid rgb(233, 166, 22);
-  border-radius: 10px;
-  font-size: 30px;
+  border: 5px solid rgb(233, 166, 22);
+  box-shadow: 2px 2px 2px rgb(233, 166, 22);
+  border-radius: 20px;
+  font-size: 25px;
   color: #fff;
   text-align: center;
 }
-
+.forecast-description {
+  font-size: 15px;
+}
 small {
   position: fixed;
   bottom: 0;
