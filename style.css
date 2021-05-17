@@ -108,6 +108,19 @@ a:hover {
   border: solid rgb(233, 166, 22);
   list-style: none;
 }
+
+.weather-forecast {
+  position: fixed;
+  margin-top: 250px;
+  padding: 20px;
+  background-color: transparent;
+  border: solid rgb(233, 166, 22);
+  border-radius: 10px;
+  font-size: 30px;
+  color: #fff;
+  text-align: center;
+}
+
 small {
   position: fixed;
   bottom: 0;
