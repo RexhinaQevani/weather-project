@@ -6,8 +6,8 @@
   padding: 20px;
   background: no-repeat url("tree-sky.jpg");
   background-size: cover;
-  border: 1px solid rgb(233, 166, 22);
-  box-shadow: 5px 5px rgb(233, 166, 22);
+  border: 1px solid rgb(209, 191, 31);
+  box-shadow: 5px 5px rgb(209, 191, 31);
   border-radius: 10px;
   color: #fff;
   opacity: 1;
@@ -18,7 +18,7 @@ input[type="text"] {
   top: 5px;
   left: 700px;
   border-radius: 5px;
-  border: 2px solid rgb(233, 166, 22);
+  border: 2px solid rgb(209, 191, 31);
   background-color: transparent;
   box-shadow: inset 1px 1px 3px #ccc;
   color: #fff;
@@ -102,7 +102,7 @@ h3 {
   font-size: 15px;
   border-radius: 20px;
   padding: 10px;
-  border: 3px solid rgb(233, 166, 22);
+  border: 3px solid rgb(209, 191, 31);
   list-style: none;
 }
 .weather-forecast {
@@ -112,8 +112,8 @@ h3 {
   margin-top: 280px;
   padding: 10px;
   background-color: transparent;
-  border: 5px solid rgb(233, 166, 22);
-  box-shadow: 2px 2px 2px rgb(233, 166, 22);
+  border: 5px solid rgb(209, 191, 31);
+  box-shadow: 2px 2px 2px rgb(209, 191, 31);
   border-radius: 20px;
   font-size: 25px;
   color: #fff;
